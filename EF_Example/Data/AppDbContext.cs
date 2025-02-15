@@ -16,6 +16,8 @@ namespace EF_Example.Data
         public DbSet<Student> Students { get; set; }
         //Add this in Context class for
         public DbSet<Customer> Customer { get; set; }
+        //Table Attribute with Schema Example
+        public DbSet<Table_Attribute_With_Schema_Exp> table_Attribute_With_Schema_Exps { get; set; }
 
     }
 }
