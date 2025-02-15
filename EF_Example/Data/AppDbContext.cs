@@ -1,4 +1,5 @@
 ﻿using EF_Example.Models;
+using EF_Example.Models.Data_Annotations;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.PortableExecutable;
@@ -13,6 +14,8 @@ namespace EF_Example.Data
         }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Student> Students { get; set; }
-       
+        //Add this in Context class for
+        public DbSet<Customer> Customer { get; set; }
+
     }
 }
